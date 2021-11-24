@@ -1,0 +1,18 @@
+#Guess the hidden Number
+n=18
+no_of_guess=1
+print("guess limit is upto 8 times\n")
+while(no_of_guess<=8):
+    guess_no=int(input("Guess the hidden number:\n"))
+    if guess_no<18:
+        print("please try bigger no\n")
+    elif guess_no>18:
+        print("please try smaller no\n")
+    else:
+        print("you won\n")
+        print(no_of_guess, "no of guesses ")
+        break
+    print(8-no_of_guess,"no of guess left")
+    no_of_guess = no_of_guess+1
+    if (no_of_guess>8):
+        print("Game Over")
